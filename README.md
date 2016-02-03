@@ -47,10 +47,10 @@ var SubAdder = ludwig.define(function(){
 
 var subAdderInstance = new SubAdder(1, 2, 3);
 subAdderInstance instanceof Adder; //true
-subAdder.a;// 1
-subAdder.b;// 2
-subAdder.c;// 3
-subAdder.add();// 6
+subAdderInstance.a;// 1
+subAdderInstance.b;// 2
+subAdderInstance.c;// 3
+subAdderInstance.add();// 6
 ```
 
 * * *
@@ -58,12 +58,7 @@ subAdder.add();// 6
 
 # ludwig.define
 
-Generates a class based on input input function
-
-
-### define(fn)
-
-Generates a class based on input input function
+Generates a class based on input function
 
 **Parameters**
 

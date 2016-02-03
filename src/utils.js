@@ -1,3 +1,5 @@
+var _ = require('lodash');
+
 /**
  * A module of common utilities
  * @namespace Utils
@@ -15,18 +17,15 @@ Utils.unwrap = function unwrap(input, defaults)
 {
   if( typeof input === 'function' )
   {
-    input.apply(defaults);
+    var clone = _.cloneDeep(defaults);
+    input.apply(clone);
+    return clone;
   }
   else if( typeof input === 'object' )
   {
-    for( var name in defaults )
-    {
-      input[name] = input[name] || defaults[name];
-    }
-  }
-  else
-  {
-    input = defaults;
+    var clone = _.cloneDeep(defaults);
+    _.merge(clone, input);
+    return clone;
   }
   return defaults;
 }
