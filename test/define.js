@@ -90,7 +90,7 @@ describe('ludwig#define', function(){
     var i1 = new Cls1()
       , i2 = new Cls2()
     ;
-    assert(i1.overrideMe() != i2.overrideMe);
+    assert(i2.overrideMe() == i1.overrideMe);
   });
 
   it('static methods should be extended', function(){
