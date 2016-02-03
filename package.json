@@ -1,0 +1,25 @@
+{
+  "name": "ludwig",
+  "version": "1.0.0",
+  "description": "A class definition module with some syntactic sugar",
+  "main": "src/ludwig.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Aldlevine/ludwig.git"
+  },
+  "keywords": [
+    "class"
+  ],
+  "author": "Aaron Levine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aldlevine/ludwig/issues"
+  },
+  "homepage": "https://github.com/Aldlevine/ludwig#readme",
+  "devDependencies": {
+    "jsdox": "^0.4.9"
+  }
+}
